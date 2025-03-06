@@ -1,8 +1,8 @@
 <?php
 
-namespace Appstract\Opcache\Http\Controllers;
+namespace Noin\Opcache\Http\Controllers;
 
-use Appstract\Opcache\OpcacheFacade as OPcache;
+use Noin\Opcache\OpcacheFacade as OPcache;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 

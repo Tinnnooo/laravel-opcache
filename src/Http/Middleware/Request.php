@@ -1,6 +1,6 @@
 <?php
 
-namespace Appstract\Opcache\Http\Middleware;
+namespace Noin\Opcache\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Encryption\DecryptException;

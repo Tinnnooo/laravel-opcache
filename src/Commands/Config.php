@@ -1,8 +1,8 @@
 <?php
 
-namespace Appstract\Opcache\Commands;
+namespace Noin\Opcache\Commands;
 
-use Appstract\Opcache\CreatesRequest;
+use Noin\Opcache\CreatesRequest;
 use Illuminate\Console\Command;
 
 class Config extends Command
@@ -37,7 +37,7 @@ class Config extends Command
             $this->line('Version info:');
             $this->table([], $this->parseTable($response['result']['version']));
 
-            $this->line(PHP_EOL.'Configuration info:');
+            $this->line(PHP_EOL . 'Configuration info:');
             $this->table([], $this->parseTable($response['result']['directives']));
         } else {
             $this->error('OPcache not configured');
@@ -61,7 +61,7 @@ class Config extends Command
             $bytes = ['opcache.memory_consumption'];
 
             if (in_array($key, $bytes)) {
-                $value = number_format($value / 1048576, 2).' MB';
+                $value = number_format($value / 1048576, 2) . ' MB';
             } elseif (is_bool($value)) {
                 $value = $value ? 'true' : 'false';
             }

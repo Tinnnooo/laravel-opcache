@@ -1,6 +1,6 @@
 <?php
 
-namespace Appstract\Opcache;
+namespace Noin\Opcache;
 
 use Symfony\Component\Finder\Finder;
 

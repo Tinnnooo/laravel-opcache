@@ -1,8 +1,8 @@
 <?php
 
-namespace Appstract\Opcache\Commands;
+namespace Noin\Opcache\Commands;
 
-use Appstract\Opcache\CreatesRequest;
+use Noin\Opcache\CreatesRequest;
 use Illuminate\Console\Command;
 
 class Compile extends Command

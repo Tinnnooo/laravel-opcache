@@ -1,6 +1,6 @@
 <?php
 
-namespace Appstract\Opcache;
+namespace Noin\Opcache;
 
 use Illuminate\Support\Facades\Crypt as Crypt;
 use Illuminate\Support\Facades\Http;
@@ -16,8 +16,9 @@ trait CreatesRequest
     {
         return Http::withHeaders(config('opcache.headers'))
             ->withOptions(['verify' => config('opcache.verify')])
-            ->get(rtrim(config('opcache.url'), '/').'/'.trim(config('opcache.prefix'), '/').'/'.ltrim($url, '/'),
+            ->get(
+                rtrim(config('opcache.url'), '/') . '/' . trim(config('opcache.prefix'), '/') . '/' . ltrim($url, '/'),
                 array_merge(['key' => Crypt::encrypt('opcache')], $parameters)
-        );
+            );
     }
 }
