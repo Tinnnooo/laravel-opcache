@@ -16,7 +16,7 @@ This package requires Laravel 7 or newer.
 You can install the package via Composer:
 
 ``` bash
-composer require appstract/laravel-opcache
+composer require noin/laravel-opcache
 ```
 
 If you need to change config values, you can publish the config file with:
