@@ -15,6 +15,9 @@
             "email": "mail@appstract.nl",
             "homepage": "https://appstract.nl",
             "role": "Developer"
+        },
+        {
+            "name": "Tinnnooo"
         }
     ],
     "require": {
