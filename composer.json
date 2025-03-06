@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Appstract\\Opcache\\": "src"
+            "Noin\\Opcache\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Appstract\\Opcache\\Test\\": "tests"
+            "Noin\\Opcache\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -48,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Appstract\\Opcache\\OpcacheServiceProvider"
+                "Noin\\Opcache\\OpcacheServiceProvider"
             ]
         }
     }
